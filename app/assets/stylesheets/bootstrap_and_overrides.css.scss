@@ -3,6 +3,10 @@ body { padding-top: 30px; }
 @import "bootstrap-responsive";
 @import "flat-ui";
 
+.tile:hover {
+  cursor:pointer;
+}
+
 .logo {
   font-size: 54px;
   font-weight: 900;

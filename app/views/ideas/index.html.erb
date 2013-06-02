@@ -1,7 +1,7 @@
 <div class="row">
-  <% if admin? %>
-    <p><%= button "New idea", new_idea_path, "pull-right" %></p>
-  <% end %>
+  <p class="pull-right">
+    <%= button "New idea", new_idea_path if can? :manage, Idea %>
+  </p>
 </div>
 
 <div class="row-fluid span12">

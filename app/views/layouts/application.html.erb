@@ -12,7 +12,14 @@
   <body class="<%= controller_name %> <%= action_name %>">
     <h1 class="logo">Dan2552<small>ideas and experiments</h1>
     <div id="main" role="main">
-      <div class="container">
+      <div id="secondaryContainer" class="container hidden">
+        <div class="content">
+          <div class="row">
+            oh, hello
+          </div>
+        </div>
+      </div>
+      <div id="primaryContainer" class="container">
         <div class="content">
            <div class="row">
             <div class="span12">
@@ -21,7 +28,8 @@
             </div>
           </div>
           <footer>
-          <div class="container">
+          <% if params[:controller] + params[:action] == "ideasindex" %>
+          <div id="footerContainer" class="container">
             <div class="row">
               <div class="span8">
                 <h3 class="footer-title">About Me</h3>
@@ -50,6 +58,7 @@
               </div>
             </div>
           </div>
+          <% end %>
           </footer>
         </div>
       </div> <!--! end of .container -->
