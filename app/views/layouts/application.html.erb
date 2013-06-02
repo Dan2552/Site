@@ -2,21 +2,15 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Site" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Site" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "Dan2552" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Dan2552" %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
-    <div class="navbar navbar-fixed-top">
-      <nav class="navbar-inner">
-        <div class="container">
-          <%= render 'layouts/navigation' %>
-        </div>
-      </nav>
-    </div>
+    <h1 class="logo">Dan2552<small>ideas and experiments</h1>
     <div id="main" role="main">
       <div class="container">
         <div class="content">
@@ -27,6 +21,35 @@
             </div>
           </div>
           <footer>
+          <div class="container">
+            <div class="row">
+              <div class="span8">
+                <h3 class="footer-title">About Me</h3>
+                <p>I studied Computer Science at University of Portsmouth; awarded the David Callear Memorial Prize for the Best Graduate Project in the field of Educational Technology for my final year project, a mobile application for the University of Portsmouth Library.
+                </p>
+                <p>
+                I have always been interested in technology and programming, with a recent obsession for mobile based development (iOS and Android) and Ruby on Rails since working at <a href="http://dev.alliants.co.uk">Alliants</a>. Keen on gadgets and technology, I own a multitude of Apple devices and Android phones.
+                </p>
+              </div>
+
+              <div class="span4">
+                <div class="footer-banner">
+                  <div class="pad">
+                    <div class="browser-author"></div>
+                  </div>
+
+                  <div class="pad">
+                  <a class="btn btn-danger btn-large btn-block" href="http://twitter.com/Dan2552" target="_blank">
+                    <span class="fui-plus-16"></span> Follow me on Twitter
+                  </a>
+                  <a class="btn btn-danger btn-large btn-block" href="http://uk.linkedin.com/in/dan2552" target="_blank">
+                  <span class="fui-eye-16"></span> View my Linkedin profile
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           </footer>
         </div>
       </div> <!--! end of .container -->

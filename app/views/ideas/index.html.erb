@@ -1,0 +1,13 @@
+<div class="row">
+  <% if admin? %>
+    <p><%= button "New idea", new_idea_path, "pull-right" %></p>
+  <% end %>
+</div>
+
+<div class="row-fluid span12">
+  <% @ideas.each do |idea| %>
+      <%= render template: 'ideas/show', locals: {idea: idea} %>
+  <% end %>
+</div>
+</div>
+</div>

@@ -1,3 +1,70 @@
 @import "bootstrap";
-body { padding-top: 60px; }
+body { padding-top: 30px; }
 @import "bootstrap-responsive";
+@import "flat-ui";
+
+.logo {
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 40px;
+  text-align: center;
+  background-image: none;
+}
+
+.logo small {
+  display: block;
+}
+
+footer {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer .pad {
+  padding: 30px 0 12px;
+}
+
+footer h3 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+[class*="span"] {
+  margin-left: 0px;
+}
+
+
+.footer-banner {
+  margin-left: 0px
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer .pad a {
+  text-align: left;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.browser-author {
+  background: url("https://si0.twimg.com/profile_images/3363944212/fa22085e452da9565b289a6f099fe92d.jpeg") center center no-repeat;
+  background-size: 85px 85px;
+  border: 3px solid white;
+  display: block;
+  height: 84px;
+  margin: 0 auto;
+  width: 84px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}

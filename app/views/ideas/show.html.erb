@@ -1,0 +1,24 @@
+<% idea = idea || @idea %>
+
+<div class="tile span6 left-align">
+  <div class="row pull-left">
+    <div class="circle-image hidden-phone">
+      <%= idea_image(idea) %>
+    </div>
+  </div>
+  <h3 class="pull-right">
+    <small><%= idea_user_count(idea) %></small>
+  </h3>
+  <h1><%= idea.title %></h1>
+  <p><small><%= idea.description %></small></p>
+  <% total = 0 %>
+  <% percent = 0 %>
+
+  <div class="task-progress span6">
+    <h3 class="tile-title">Tasks <small>(<%= percent %>/<%= total %>)</small></h3>
+    <div class="progress">
+      <div class="bar" style="width: <%= (percent / total.to_f) * 100 %>%;">
+      </div>
+    </div>
+  </div>
+</div>
